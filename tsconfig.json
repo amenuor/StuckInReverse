@@ -12,7 +12,7 @@
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true,
+        "suppressImplicitAnyIndexErrors": true
     },
     "filesGlob": [
         "./**/*.ts",
@@ -23,8 +23,8 @@
         "./OSAdapters/IAdaptOS.ts",
         "./OSAdapters/UnixAdapter.ts",
         "./SIRConsole.ts",
-        "./StaticAnalysisResults.ts",
-        "./Typings/node.d.ts",
-        "./Utils.ts"
+        "./StaticAnalysis.ts",
+        "./Utils.ts",
+        "./typings/node.d.ts"
     ]
 }
