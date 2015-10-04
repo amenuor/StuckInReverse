@@ -15,7 +15,8 @@ class SIRConsole{
 
       console.log("Performing static analysis...");
       adapter.performStaticAnalysis(function(result: staticAnalysis.StaticAnalysisResults){
-        console.log(result.stdout);
+        console.log(result.ProgramStringsExtraxtionResults.stdout);
+        console.log(result.FileExtraxtionResults.stdout);
       });
 
     }

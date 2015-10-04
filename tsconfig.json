@@ -25,6 +25,7 @@
         "./SIRConsole.ts",
         "./StaticAnalysis.ts",
         "./Utils.ts",
+        "./typings/async.d.ts",
         "./typings/node.d.ts"
     ]
 }
