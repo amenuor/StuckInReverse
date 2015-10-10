@@ -1,0 +1,101 @@
+$bgcolor: #000;
+$titlecolor: #fff;
+$subtitlecolor: #ddd;
+$textcolor: #FB9134;
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(../fonts/orbitron.woff2) format('woff2');
+}
+
+::-webkit-input-placeholder {
+   color: $textcolor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $textcolor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $textcolor;
+}
+
+:-ms-input-placeholder {
+   color: $textcolor;
+}
+
+
+body {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  color: $textcolor;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  color: $titlecolor;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+}
+
+h2{
+  color: $subtitlecolor;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.0rem;
+}
+
+.row.fullWidth {
+   width: 100%;
+   margin: 0;
+   max-width: initial;
+}
+
+#header
+{
+  height: 20vh;
+}
+
+#contents{
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+
+  #output{
+    min-height: 10vh;
+  }
+
+  .window
+  {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  #commandLine
+  {
+    input[type="text"] {
+      display: block;
+      margin: 0;
+      width: 100%;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      padding: 10px;
+      border: solid 1px #707070;
+      transition: box-shadow 0.3s, border 0.3s;
+      background-color: $bgcolor;
+      color: $textcolor;
+    }
+    input[type="text"]:focus,
+    input[type="text"].focus {
+      outline: none;
+      border: solid 1px #707070;
+      box-shadow: 0 0 5px 1px #969696;
+    }
+  }
+
+}

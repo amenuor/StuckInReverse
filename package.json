@@ -2,7 +2,7 @@
   "name": "stuckinreverse",
   "version": "1.0.0",
   "description": "reverse engineer framework",
-  "main": "SIRConsole.js",
+  "main": "GUI/index.html",
   "dependencies": {
     "async": "^1.4.2"
   },

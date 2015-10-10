@@ -1,2 +1,8 @@
+/*.js
+/**/*.js
+!GUI/js/*.js
 node_modules/*
-*.js
+GUI/bower_components/*
+GUI/.sass-cache/*
+*.DS_Store
+GUI/stylesheets/*
