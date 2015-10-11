@@ -1,6 +1,4 @@
-/*.js
-/**/*.js
-!GUI/js/*.js
+*.js
 node_modules/*
 GUI/bower_components/*
 GUI/.sass-cache/*

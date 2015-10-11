@@ -20,12 +20,20 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./OSAdapters/IAdaptOS.ts",
-        "./OSAdapters/UnixAdapter.ts",
-        "./SIRConsole.ts",
-        "./StaticAnalysis.ts",
-        "./Utils.ts",
+        "./Core/OSAdapters/IAdaptOS.ts",
+        "./Core/OSAdapters/UnixAdapter.ts",
+        "./Core/OSAdapters/WindowsAdapter.ts",
+        "./Core/StaticAnalysis.ts",
+        "./Core/Utils.ts",
+        "./GUI/js/SIRController.ts",
+        "./GUI/js/SIRModel.ts",
+        "./GUI/js/SIRView.ts",
+        "./GUI/js/app.ts",
+        "./TUI/SIRConsole.ts",
         "./typings/async.d.ts",
+        "./typings/foundation.d.ts",
+        "./typings/interact.d.ts",
+        "./typings/jquery.d.ts",
         "./typings/node.d.ts"
     ]
 }

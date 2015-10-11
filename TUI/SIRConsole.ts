@@ -1,8 +1,6 @@
-/// <reference path="./typings/node.d.ts"/>
-
-import adaptOS = require('./OSAdapters/IAdaptOS');
-import staticAnalysis = require('./StaticAnalysis');
-import utilities = require("./Utils");
+import adaptOS = require('../Core/OSAdapters/IAdaptOS');
+import staticAnalysis = require('../Core/StaticAnalysis');
+import utilities = require("../Core/Utils");
 
 class SIRConsole{
     public static RunConsoleInterface(cmdLineParameters: string[]): void{
@@ -15,8 +13,8 @@ class SIRConsole{
 
       console.log("Performing static analysis...");
       adapter.performStaticAnalysis(function(result: staticAnalysis.StaticAnalysisResults){
-        console.log(result.ProgramStringsExtraxtionResults.stdout);
-        console.log(result.FileExtraxtionResults.stdout);
+        console.log(result.ProgramStringsExtractionResults.StdOut);
+        console.log(result.FileExtractionResults.stdout);
       });
 
     }

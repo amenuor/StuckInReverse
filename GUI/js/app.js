@@ -1,3 +1,3 @@
-// Foundation JavaScript
-// Documentation can be found at: http://foundation.zurb.com/docs
+var sirController = require('./SIRController');
 $(document).foundation();
+var sirCtrl = new sirController.SIRController();
