@@ -12,6 +12,7 @@ export class WindowsAdapter implements adaptOS.IAdaptOS{
   }
 
   public performStaticAnalysis = (callback:Function) => {
+    throw new Error("Windows is not supported yet");
   }
 
   public pathValidation(contwinpath:string): boolean

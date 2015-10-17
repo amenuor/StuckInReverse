@@ -4,7 +4,10 @@
   "description": "reverse engineer framework",
   "main": "GUI/index.html",
   "dependencies": {
-    "async": "^1.4.2"
+    "async": "^1.4.2",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "typescript": "^1.6.2"
   },
   "devDependencies": {},
   "scripts": {
