@@ -3,13 +3,6 @@ $titlecolor: #fff;
 $subtitlecolor: #ddd;
 $textcolor: #FB9134;
 
-@font-face {
-  font-family: 'Orbitron';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(../fonts/orbitron.woff2) format('woff2');
-}
-
 ::-webkit-input-placeholder {
    color: $textcolor;
 }
@@ -35,18 +28,31 @@ body {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  font-family: monospace;
 }
 
 h1{
   color: $titlecolor;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
 }
 
 h2{
   color: $subtitlecolor;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.0rem;
+}
+
+ul{
+  list-style: none;
+  line-height: 1.3;
+  font-size: 0.7rem;
+}
+
+li{
+  white-space: nowrap;
+}
+
+pre{
+  display: inline-block;
+  margin-left: 5px;
+  overflow: auto;
 }
 
 .row.fullWidth {
@@ -55,32 +61,68 @@ h2{
    max-width: initial;
 }
 
-#header
-{
-  height: 20vh;
-}
-
 #contents{
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column-reverse;
 
   #windowsContainer{
-    height: 80vh;
+    height: 100vh;
+
+    #consoleOutput{
+      width: 100vw;
+      height: 100vh;
+    }
 
     .outputWindow{
       width: 30vw;
-      max-height: 80vh;
-      border: 1px #fff solid;
-      background-color: rgba(0,0,0,0.6);
+      max-height: 100vh;
+      border: 5px transparent solid;
+      background-color: rgba(17,102,163,0.3);
       color: #fff;
       overflow: auto;
+      box-sizing: border-box;
+
+      .topBar{
+        background-color: #1166a3;
+        white-space: nowrap;
+
+        .title{
+          color: #fff;
+          width: auto;
+          max-width: 80%;
+          margin-left: 5px;
+          display: inline-block;
+
+          p{
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+          }
+
+        }
+
+        .controls{
+          min-width: 100px;
+          display: inline-block;
+          float: right;
+
+          i{
+            cursor: hand;
+            cursor: pointer;
+          }
+
+        }
+
+      }
+
+      .timestamp{
+        color: $textcolor;
+      }
+
+
     }
 
-  }
-
-  #output{
-    min-height: 10vh;
   }
 
   #commandLine
