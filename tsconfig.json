@@ -34,6 +34,6 @@
         "./typings/react-global.d.ts",
         "./typings/react.d.ts",
         "./GUI/js/outputWindow.tsx",
-        "./GUI/js/textReact.tsx"
+        "./GUI/js/renderMain.tsx"
     ]
 }

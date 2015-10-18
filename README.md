@@ -2,4 +2,6 @@ Start Sass
 bundle exec compass watch
 
 NwJS test
-nwjs.app/Contents/MacOS/nwjs ./ &
+/Applications/nwjs.app/Contents/MacOS/nwjs ./ &
+
+browserify renderMain.js -o sir.js

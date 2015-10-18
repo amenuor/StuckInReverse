@@ -28,9 +28,40 @@ export var OutputWindow = React.createClass<OutputWindowProps, any>({
     this.addOutputLine({timeStamp: new Date(), lineContents: "test"});
   },
 
+  componentDidMount: function(){
+    var element = document.getElementById(this.props.title+'-grid-snap'),
+        x = 0, y = 0;
+
+    interact(element)
+      .draggable({
+        snap: {
+          targets: [
+            interact.createSnapGrid({ x: 30, y: 30 })
+          ],
+          range: Infinity,
+          relativePoints: [ { x: 0, y: 0 } ]
+        },
+        inertia: true,
+        restrict: {
+          restriction: element.parentNode,
+          elementRect: { top: 0, left: 0, bottom: 1, right: 1 },
+          endOnly: true
+        }
+      })
+      .on('dragmove', function (event) {
+        x += event.dx;
+        y += event.dy;
+
+        event.target.style.webkitTransform =
+        event.target.style.transform =
+            'translate(' + x + 'px, ' + y + 'px)';
+      });
+
+  },
+
   render: function() {
     return (
-      <div className="outputWindow">
+      <div id={this.props.title + '-grid-snap'} className="outputWindow">
         <div className="topBar">
           <div className="title"><p>{this.props.title}</p></div>
         </div>

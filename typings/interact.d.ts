@@ -236,7 +236,8 @@ declare module Interact {
         stop(event: Event): InteractStatic;
         styleCursor(): boolean;
         styleCursor(newValue: boolean): InteractStatic;
-        supportsTouch(): boolean
+        supportsTouch(): boolean;
+        createSnapGrid(gridSize: Point): any;
     }
 }
 
