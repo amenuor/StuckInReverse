@@ -20,12 +20,12 @@
         "!./node_modules/**/*"
     ],
     "files": [
+        "./CLI/SIRConsole.ts",
         "./Core/OSAdapters/IAdaptOS.ts",
         "./Core/OSAdapters/UnixAdapter.ts",
         "./Core/OSAdapters/WindowsAdapter.ts",
         "./Core/StaticAnalysis.ts",
         "./Core/Utils.ts",
-        "./TUI/SIRConsole.ts",
         "./typings/async.d.ts",
         "./typings/foundation.d.ts",
         "./typings/interact.d.ts",

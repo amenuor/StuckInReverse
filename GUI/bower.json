@@ -4,6 +4,7 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "react": "~0.14.0"
+    "react": "~0.14.0",
+    "interact": "taye/interact.js"
   }
 }

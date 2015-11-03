@@ -100,7 +100,7 @@ export var OutputWindow = React.createClass<OutputWindowProps, any>({
       <div id={this.props.elementID} className="outputWindow">
         <div className="topBar">
           <div className="title"><p>{this.props.title}</p></div>
-          <div className="controls"><div className="row"><i className="fi-page large-4 columns" onClick={this.clearWindow} title="Clear window"></i><i className="fi-minus large-4 columns" title="Minimize window"></i><i className="fi-x large-4 columns" title="Close window"></i></div></div>
+          <div className="controls"><div className="row"><i className="fi-page small-4 columns" onClick={this.clearWindow} title="Clear window"></i><i className="fi-minus small-4 columns" title="Minimize window"></i><i className="fi-x small-4 columns" title="Close window"></i></div></div>
         </div>
         <div className="contents">
           <ul className="lines">

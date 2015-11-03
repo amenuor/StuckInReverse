@@ -19,6 +19,9 @@ $textcolor: #FB9134;
    color: $textcolor;
 }
 
+html{
+  cursor: auto;
+}
 
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
@@ -29,6 +32,7 @@ body {
   background-size: cover;
   overflow: hidden;
   font-family: monospace;
+  cursor: inherit;
 }
 
 h1{
@@ -127,6 +131,8 @@ pre{
 
   #commandLine
   {
+    position: fixed;
+    bottom: 0;
     input[type="text"] {
       display: block;
       margin: 0;
